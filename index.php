@@ -9,9 +9,9 @@
  */
 $time = microtime(true);
 	// use the timer to time how long it takes to generate a page
-require_once '/home/www/astrodb/xtf/dataface-public-api.php';
+require_once '/var/www/astrodb/xtf/dataface-public-api.php';
 	// include the initialization file
-df_init(__FILE__, 'http://astrodb/xtf');
+df_init(__FILE__, 'http://astro.vassarplace.net/xtf');
 	// initialize the site
 
 $app =& Dataface_Application::getInstance();
