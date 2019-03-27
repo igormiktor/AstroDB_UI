@@ -1,4 +1,4 @@
-<?
+<?php
 
 class tables_PlanetaryNebulas
 {

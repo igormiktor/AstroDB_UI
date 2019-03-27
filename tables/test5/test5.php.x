@@ -1,4 +1,4 @@
-<?
+<?php
 class tables_test5
 {
 	function bar__renderCell( &$record )

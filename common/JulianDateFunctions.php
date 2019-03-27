@@ -1,4 +1,4 @@
-<?
+<?php
 class JulianDateFunctions
 {
 	function convertXtfDateToJulianDate( $xtfDate )
