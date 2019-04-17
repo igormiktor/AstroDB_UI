@@ -1,6 +1,6 @@
 <?php
 
-class tables_Hershel400
+class tables_Herschel400
 {
 	function getTitle( &$record )
 	{
