@@ -1,3 +1,4 @@
 RewriteEngine On
+RewriteRule "" index.php [L]
 RewriteRule (index\.php|403\.html)$ - [L]
 RewriteRule !.+\.(png|jpg|gif|GIF|PNG|JPG|jpeg|JPEG|ICO|js|css|html|xml|htm)$ 403.html [L]

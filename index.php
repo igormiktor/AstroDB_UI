@@ -7,19 +7,17 @@
  * This is an entry file for this Dataface Application.  To use your application
  * simply point your web browser to this file.
  */
-$time = microtime(true);
-	// use the timer to time how long it takes to generate a page
-require_once '/var/www/astrodb/xtf/dataface-public-api.php';
-	// include the initialization file
-df_init(__FILE__, 'xtf');
-	// initialize the site
 
-$app =& Dataface_Application::getInstance();
-	// get an application instance and perform initialization
-$app->display();
-	// display the application
+// Use the timer to time how long it takes to generate a page
+// $time = microtime(true);
 
+// Include the Xataface API
+require_once 'xataface/dataface-public-api.php';
 
-$time = microtime(true) - $time;
-echo "<p>Execution Time: $time</p>";
+// Initialize Xataface framework
+df_init(__FILE__, 'xataface')->display();
+
+// Display the time taken
+// $time = microtime(true) - $time;
+// echo "<p>Execution Time: $time</p>";
 ?>
