@@ -47,7 +47,7 @@ class tables_ObservationDetails
 		$found = $record->getValue( 'found' );
 
 		// If found for this specific case, update the overall found item for the observation
-		if ( $found == 1 || $found == 'true' )
+		if ( $found == 1  or  $found == 'true' )
 		{
 			$observation =& $record->getRelatedRecord( 'Observation' );
 			$observation->setValue( 'found', 1 );
